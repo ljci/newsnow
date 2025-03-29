@@ -1,7 +1,8 @@
-name = "newsnow"  # 你的项目名称
-type = "javascript"
+name = "newsnow"
+pages_build_output_dir = "dist/output/public"
+compatibility_date = "2024-10-03"
 
 [[d1_databases]]
 binding = "NEWSNOW_DB"
-database_name = "newsnow_db"  # 替换为你创建的数据库名称
-database_id = "504d1621-f65e-4133-aa85-ad2febf928e9"      # 替换为你创建的数据库 ID
+database_name = "newsnow-db"
+database_id = "504d1621-f65e-4133-aa85-ad2febf928e9"

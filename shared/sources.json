@@ -508,5 +508,33 @@
     "color": "green",
     "interval": 1800000,
     "title": "最热"
+  },
+  "reddit": {
+    "redirect": "reddit-popular",
+    "name": "Reddit",
+    "type": "hottest",
+    "column": "world",
+    "home": "https://www.reddit.com",
+    "color": "orange",
+    "interval": 600000,
+    "title": "Popular"
+  },
+  "reddit-popular": {
+    "name": "Reddit",
+    "type": "hottest",
+    "column": "world",
+    "home": "https://www.reddit.com",
+    "color": "orange",
+    "interval": 600000,
+    "title": "Popular"
+  },
+  "reddit-news": {
+    "name": "Reddit",
+    "type": "hottest",
+    "column": "world",
+    "home": "https://www.reddit.com",
+    "color": "orange",
+    "interval": 600000,
+    "title": "News"
   }
 }

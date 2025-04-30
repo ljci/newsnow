@@ -398,6 +398,24 @@ export const originSources = {
       },
     },
   },
+  "reddit": {
+    name: "Reddit",
+    color: "orange",
+    home: "https://www.reddit.com",
+    sub: {
+      popular: {
+        title: "Popular",
+        column: "world",
+        type: "hottest",
+      },
+      news: {
+        title: "News",
+        column: "world",
+        type: "hottest",
+      },
+      // Add more subreddits as needed
+    },
+  },
 } as const satisfies Record<string, OriginSource>
 
 export function genSources() {

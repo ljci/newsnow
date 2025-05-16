@@ -56,11 +56,18 @@ async function fetchPapers(timeframe: string): Promise<NewsItem[]> {
   const $ = cheerio.load(html)
   const papers: NewsItem[] = []
 
-  // Adjust selectors based on actual HTML structure
-  $(".paper-card").each((_, el) => {
+  // Updated selectors based on the actual HTML structure
+  $("article").each((_, el) => {
     const $el = $(el)
-    const url = $el.find("a.paper-link").attr("href")
-    const title = $el.find(".paper-title").text().trim()
+    const titleEl = $el.find("h3 a")
+    const url = titleEl.attr("href")
+    const title = titleEl.text().trim()
+
+    // Get authors info
+    const authorInfo = $el.find(".text-xs.text-gray-500").text().trim()
+
+    // Get summary/abstract if available
+    const summary = $el.find(".line-clamp-3.text-gray-500").text().trim()
 
     if (url && title) {
       papers.push({
@@ -70,8 +77,8 @@ async function fetchPapers(timeframe: string): Promise<NewsItem[]> {
         // Optional fields
         pubDate: new Date().getTime(),
         extra: {
-          hover: $el.find(".paper-abstract").text().trim(),
-          info: $el.find(".paper-authors").text().trim(),
+          hover: summary,
+          info: authorInfo || `From Hugging Face Papers (${timeframe})`,
         },
       })
     }

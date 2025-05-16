@@ -12,6 +12,19 @@ async function downloadImage(url: string, outputPath: string, id: string) {
   try {
     const response = await fetch(url)
     if (!response.ok) {
+      // Try fallback URLs for specific sites
+      if (id === "huggingface") {
+        // Try direct HuggingFace favicon URL
+        const fallbackUrl = "https://huggingface.co/favicon.ico"
+        consola.info(`${id}: trying fallback URL: ${fallbackUrl}`)
+        const fallbackResponse = await fetch(fallbackUrl)
+        if (fallbackResponse.ok) {
+          const image = await fallbackResponse.arrayBuffer()
+          fs.writeFileSync(outputPath, Buffer.from(image))
+          consola.success(`${id}: downloaded successfully using fallback URL.`)
+          return
+        }
+      }
       throw new Error(`${id}: could not fetch ${url}, status: ${response.status}`)
     }
 

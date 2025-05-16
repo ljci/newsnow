@@ -47,5 +47,8 @@
   "chongbuluo-latest": "chongbuluo-zuixin",
   "chongbuluo-hot": "chongbuluo-zuire",
   "reddit-popular": "Reddit-Popular",
-  "reddit-news": "Reddit-News"
+  "reddit-news": "Reddit-News",
+  "huggingface-daily": "Hugging Face-Daily Papers",
+  "huggingface-weekly": "Hugging Face-Weekly Papers",
+  "huggingface-monthly": "Hugging Face-Monthly Papers"
 }

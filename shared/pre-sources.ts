@@ -416,6 +416,26 @@ export const originSources = {
       // Add more subreddits as needed
     },
   },
+  "huggingface": {
+    name: "Hugging Face",
+    color: "blue",
+    column: "tech",
+    home: "https://huggingface.co/papers",
+    sub: {
+      daily: {
+        title: "Daily Papers",
+        type: "hottest",
+      },
+      weekly: {
+        title: "Weekly Papers",
+        type: "hottest",
+      },
+      monthly: {
+        title: "Monthly Papers",
+        type: "hottest",
+      },
+    },
+  },
 } as const satisfies Record<string, OriginSource>
 
 export function genSources() {

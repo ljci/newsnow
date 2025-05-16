@@ -536,5 +536,42 @@
     "color": "orange",
     "interval": 600000,
     "title": "News"
+  },
+  "huggingface": {
+    "redirect": "huggingface-daily",
+    "name": "Hugging Face",
+    "type": "hottest",
+    "column": "tech",
+    "home": "https://huggingface.co/papers",
+    "color": "blue",
+    "interval": 600000,
+    "title": "Daily Papers"
+  },
+  "huggingface-daily": {
+    "name": "Hugging Face",
+    "type": "hottest",
+    "column": "tech",
+    "home": "https://huggingface.co/papers",
+    "color": "blue",
+    "interval": 600000,
+    "title": "Daily Papers"
+  },
+  "huggingface-weekly": {
+    "name": "Hugging Face",
+    "type": "hottest",
+    "column": "tech",
+    "home": "https://huggingface.co/papers",
+    "color": "blue",
+    "interval": 600000,
+    "title": "Weekly Papers"
+  },
+  "huggingface-monthly": {
+    "name": "Hugging Face",
+    "type": "hottest",
+    "column": "tech",
+    "home": "https://huggingface.co/papers",
+    "color": "blue",
+    "interval": 600000,
+    "title": "Monthly Papers"
   }
 }

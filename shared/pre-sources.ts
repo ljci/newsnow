@@ -451,6 +451,13 @@ export const originSources = {
       },
     },
   },
+  "itsfoss": {
+    name: "It's FOSS",
+    color: "orange",
+    home: "https://itsfoss.com/",
+    column: "tech",
+    type: "realtime",
+  },
 } as const satisfies Record<string, OriginSource>
 
 export function genSources() {

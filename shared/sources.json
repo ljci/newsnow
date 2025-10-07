@@ -516,5 +516,13 @@
     "color": "blue",
     "interval": 600000,
     "title": "Monthly Papers"
+  },
+  "itsfoss": {
+    "name": "It's FOSS",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://itsfoss.com/",
+    "color": "orange",
+    "interval": 600000
   }
 }

@@ -24,8 +24,8 @@ git checkout -b bilibili-hot-video
 
 Add your new source to the source configuration in `/shared/pre-sources.ts`:
 
-```typescript
-"bilibili": {
+```
+  "bilibili": {
   name: "哔哩哔哩",
   color: "blue",
   home: "https://www.bilibili.com",
@@ -41,12 +41,12 @@ Add your new source to the source configuration in `/shared/pre-sources.ts`:
       type: "hottest"
     }
   }
-};
+}
 ```
 
 For a completely new source, add a new top-level entry:
 
-```typescript
+```
 "newsource": {
   name: "New Source",
   color: "blue",
@@ -105,7 +105,7 @@ const hotVideo = defineSource(async () => {
     extra: {
       info: `${video.owner.name} · ${formatNumber(video.stat.view)}观看 · ${formatNumber(video.stat.like)}点赞`,
       hover: video.desc,
-      icon: proxyPicture(video.pic),
+      icon: video.pic,
     },
   }))
 })

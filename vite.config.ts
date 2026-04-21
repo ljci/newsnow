@@ -26,7 +26,7 @@ export default defineConfig({
       // autoCodeSplitting: true,
     }),
     unimport.vite({
-      dirs: ["src/hooks", "shared", "src/utils", "src/atoms"],
+      dirs: ["src/hooks", "shared", "src/utils", "src/atoms"].map(d => join(projectDir, d)),
       presets: ["react", {
         from: "jotai",
         imports: ["atom", "useAtom", "useAtomValue", "useSetAtom"],
@@ -35,7 +35,7 @@ export default defineConfig({
         { from: "clsx", name: "clsx", as: "$" },
         { from: "jotai/utils", name: "atomWithStorage" },
       ],
-      dts: "imports.app.d.ts",
+      dts: join(projectDir, "imports.app.d.ts"),
     }),
     unocss(),
     react(),

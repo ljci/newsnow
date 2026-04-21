@@ -104,34 +104,6 @@
     "interval": 1800000,
     "title": "最热"
   },
-  "36kr": {
-    "redirect": "36kr-quick",
-    "name": "36氪",
-    "type": "realtime",
-    "column": "tech",
-    "home": "https://36kr.com",
-    "color": "blue",
-    "interval": 600000,
-    "title": "快讯"
-  },
-  "36kr-quick": {
-    "name": "36氪",
-    "type": "realtime",
-    "column": "tech",
-    "home": "https://36kr.com",
-    "color": "blue",
-    "interval": 600000,
-    "title": "快讯"
-  },
-  "36kr-renqi": {
-    "name": "36氪",
-    "type": "hottest",
-    "column": "tech",
-    "home": "https://36kr.com",
-    "color": "blue",
-    "interval": 600000,
-    "title": "人气榜"
-  },
   "douyin": {
     "name": "抖音",
     "type": "hottest",
@@ -560,7 +532,15 @@
     "column": "tech",
     "home": "https://huggingface.co/papers",
     "color": "blue",
-    "interval": 1800000,
-    "title": "综合早报"
+    "interval": 600000,
+    "title": "Monthly Papers"
+  },
+  "itsfoss": {
+    "name": "It's FOSS",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://itsfoss.com/",
+    "color": "orange",
+    "interval": 600000
   }
 }

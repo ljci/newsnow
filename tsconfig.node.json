@@ -9,5 +9,7 @@
       "@shared/*": ["shared/*"]
     }
   },
-  "include": ["server", "*.config.*", "shared", "test", "scripts", "tools", "dist/.nitro/types"]
+  "include": ["server", "*.config.*", "shared", "test", "scripts", "tools", "dist/.nitro/types"],
+  // eslint 的 flat config 类型来自 pnpm 隔离的传递依赖，tsc 无法为它生成可移植的类型名（TS2742）
+  "exclude": ["eslint.config.mjs"]
 }

@@ -493,6 +493,48 @@ export const originSources = {
     column: "tech",
     type: "realtime",
   },
+  "tencent": {
+    name: "腾讯新闻",
+    column: "china",
+    color: "blue",
+    home: "https://news.qq.com",
+    sub: {
+      hot: {
+        title: "综合早报",
+        type: "hottest",
+        interval: Time.Common,
+        home: "https://news.qq.com/tag/aEWqxLtdgmQ=",
+      },
+    },
+  },
+  "qqvideo": {
+    name: "腾讯视频",
+    column: "china",
+    color: "blue",
+    home: "https://v.qq.com/",
+    sub: {
+      "tv-hotsearch": {
+        title: "热搜榜",
+        type: "hottest",
+        interval: Time.Common,
+        home: "https://v.qq.com/channel/tv",
+      },
+    },
+  },
+  "iqiyi": {
+    name: "爱奇艺",
+    column: "china",
+    color: "green",
+    home: "https://www.iqiyi.com",
+    sub: {
+      "hot-ranklist": {
+        title: "热播榜",
+        type: "hottest",
+        interval: Time.Common,
+        home: "https://www.iqiyi.com",
+      },
+    },
+  },
 } as const satisfies Record<string, OriginSource>
 
 export function genSources() {

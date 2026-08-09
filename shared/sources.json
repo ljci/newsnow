@@ -104,6 +104,37 @@
     "interval": 1800000,
     "title": "最热"
   },
+  "36kr": {
+    "redirect": "36kr-quick",
+    "name": "36氪",
+    "type": "realtime",
+    "disable": "cf",
+    "column": "tech",
+    "home": "https://36kr.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "快讯"
+  },
+  "36kr-quick": {
+    "name": "36氪",
+    "type": "realtime",
+    "disable": "cf",
+    "column": "tech",
+    "home": "https://36kr.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "快讯"
+  },
+  "36kr-renqi": {
+    "name": "36氪",
+    "type": "hottest",
+    "disable": "cf",
+    "column": "tech",
+    "home": "https://36kr.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "人气榜"
+  },
   "douyin": {
     "name": "抖音",
     "type": "hottest",
@@ -116,10 +147,27 @@
     "title": "主干道热帖",
     "name": "虎扑",
     "type": "hottest",
-    "column": "china",
+    "column": "sports",
     "home": "https://hupu.com",
     "color": "red",
     "interval": 600000
+  },
+  "dongqiudi": {
+    "title": "头条",
+    "name": "懂球帝",
+    "type": "realtime",
+    "column": "sports",
+    "home": "https://www.dongqiudi.com",
+    "color": "green",
+    "interval": 600000
+  },
+  "aihot": {
+    "name": "AIHOT",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://aihot.virxact.com/all",
+    "color": "blue",
+    "interval": 300000
   },
   "tieba": {
     "title": "热议",

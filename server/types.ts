@@ -9,11 +9,16 @@ export interface RSSInfo {
   items: RSSItem[]
 }
 export interface RSSItem {
+  id?: string
   title: string
   description: string
   link: string
   created?: string
+  author?: string
+  category?: RSSCategory | RSSCategory[]
 }
+
+export type RSSCategory = string | { term?: string, label?: string }
 
 export interface CacheInfo {
   id: SourceID
